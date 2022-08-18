@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* primary */
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+
+    /* accent  */
+    --blue: hsl(248, 32%, 49%);
+
+    /* neutral */
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body{
+    background-color: var(--red);
+    background-image: url(images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 3em 1em;
+    font-family: 'Poppins';
+}
+
+.main-container{
+    max-width: 500px;
+    margin: 2em auto;
+}
+
+.about-section{
+    text-align: center;
+}
+
+.about-section h1{
+    font-size: 25px;
+    padding: 0 0 1.5em 0;
+    line-height: 1.2;
+    color: white;
+}
+
+.about-section p{
+    color: rgb(229, 227, 227);
+}
+
+.trial-offer{
+    text-align: center;
+    background-color: var(--blue);
+    margin: 3em 0 1.5em 0;
+    padding: 1em 0;
+    border-radius: 10px;
+    box-shadow: 0 8px 0px 0px rgba(0, 0, 0, 0.237);
+    color: rgb(229, 227, 227);
+}
+
+.trial-offer p{
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.trial-offer span{
+    font-weight: bold;
+}
+
+form{
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 8px 0px 0px rgba(0, 0, 0, 0.237);
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+input{
+    padding: 1em;
+    width: 100%;
+    color: var(--dark-blue);
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.568);
+}
+
+.input-error{
+    border: 2px solid var(--red);
+}
+
+.input-error:focus{
+    border: 2px solid var(--blue);
+}
+
+.error-input-empty,
+.error-email-invalid,
+.error-icon{
+    display: none;
+}
+
+.input-field.error .error-icon,
+.input-field.error .error-input-empty{
+    display: block;
+}
+
+.input-field.invalid .error-email-invalid,
+.input-field.invalid .error-icon{
+    display: block;
+}
+
+.error-icon{
+    position: absolute;
+    right: 1.5em;
+    top:.65em;
+}
+
+.error-input-empty,
+.error-email-invalid{
+    position: relative;
+    margin: 0;
+    margin-left: auto;
+    margin-top: .5em;
+    color: hsla(0, 100%, 74%, 0.778);
+    font-style: italic;
+}
+
+button{
+    padding: 1em 0;
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: var(--green);
+    color: rgb(229, 227, 227);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(154, 75%, 68%);
+}
+
+form p{
+    text-align: center;
+    font-size: 10px;
+    color: var(--grayish-blue);
+    max-width: 220px;
+    margin: 1em auto .5em auto;
+}
+
+form a{
+    color: var(--red);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media screen and (min-width:1000px) {
+    body{
+        background-image: url(images/bg-intro-desktop.png);
+    }
+    .main-container{
+        display: flex;
+        justify-content: space-between;
+        gap: 3em;
+        padding: 0 2.5em;
+        margin: 0 auto;
+        max-width: 1150px;
+        height: 100%;
+    }
+    .main-container > section{
+        width:50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-section{
+        text-align:left;
+        max-width: 500px;
+    }
+    .about-section h1{
+        font-size: 40px;
+        padding-bottom: .5em;
+    }
+    .registration-section {
+        max-width: 500px;
+    }
+    .trial-offer p{
+        max-width: unset;
+    }
+}
