@@ -79,7 +79,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     position: relative;
 }
 
@@ -194,5 +194,11 @@ form a{
     }
     .trial-offer p{
         max-width: unset;
+    }
+    form{
+        padding: 2.5em;
+    }
+    form p{
+        max-width: 100%;
     }
 }
