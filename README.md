@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/Wardinul/Intro-component-with-sign-up-form)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://wardinul.github.io/Intro-component-with-sign-up-form/)
 
 ## My process
 
