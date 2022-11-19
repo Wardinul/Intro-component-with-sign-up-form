@@ -1,3 +1,4 @@
+
 const form = document.getElementById('form');
 const inputs = document.querySelectorAll('input');
 
