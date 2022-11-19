@@ -8,22 +8,26 @@
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
+  <!-- CSS -->
+
   <link rel="stylesheet" href="styles.css">
+
+  <!-- JavaScript -->
 
   <script defer src="script.js"></script>
 
 </head>
 <body>
-  <main class="main-container">
-    <div class="about-section">
-      <h1>Learn to code by watching others</h1>
-      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+  <main class="main__container">
+    <div class="main__container__about">
+      <h1 class="main__container__title">Learn to code by watching others</h1>
+      <p class="main__container__paragraph">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
     </div>
-    <div class="registration-section">
-      <div class="trial-offer">
+    <div class="main__container__registration">
+      <div class="main__container__registration__offer">
         <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
       </div>
-      <form id="form" action="#">
+      <form class="main__container__form" id="form" action="#">
         <div class="input-field">
           <input id="first-name" type="text" placeholder="First Name">
           <img src="images/icon-error.svg" alt="error icon" class="error-icon">
@@ -45,8 +49,8 @@
           <img src="images/icon-error.svg" alt="error icon" class="error-icon">
           <p class="error-input-empty">Password cannot be empty</p>
         </div>
-        <button type="submit">CLAIM YOUR FREE TRIAL</button>
-        <p>By clicking the button you are agreeing to our <a href="#">Terms and Services</a></p>
+        <button class="main__container__registration__btn" type="submit">CLAIM YOUR FREE TRIAL</button>
+        <p class="terms-agreement">By clicking the button you are agreeing to our <a href="#">Terms and Services</a></p>
       </form>
     </div>
   </main>

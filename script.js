@@ -1,23 +1,23 @@
-const form = document.getElementById('form')
-const inputs = document.querySelectorAll('input')
+const form = document.getElementById('form');
+const inputs = document.querySelectorAll('input');
 
 form.addEventListener('submit', (e)=>{
     e.preventDefault()
     inputs.forEach((input)=>{
         if(input.value === '' || input.value == null){
-            input.parentElement.classList.add('error')
-            input.classList.add('input-error')
-            input.parentElement.classList.remove('invalid')
+            input.parentElement.classList.add('error');
+            input.classList.add('input-error');
+            input.parentElement.classList.remove('invalid');
         } else{
-            input.parentElement.classList.remove('error')
-            input.classList.remove('input-error')
+            input.parentElement.classList.remove('error');
+            input.classList.remove('input-error');
             if (input.type == 'email') {
 				if (validateEmail(input.value)) {
 					input.parentElement.classList.remove('error');
-                    input.parentElement.classList.remove('invalid')
+                    input.parentElement.classList.remove('invalid');
 				} else {
-                    input.parentElement.classList.add('invalid')
-                    input.classList.add('input-error')
+                    input.parentElement.classList.add('invalid');
+                    input.classList.add('input-error');
 				}
 			}
         }
